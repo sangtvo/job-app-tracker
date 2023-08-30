@@ -1,0 +1,93 @@
+### CREATE five documents.
+POST http://localhost:3000/log HTTP/1.1
+content-type: application/json
+
+{
+    "company": "Company A",
+    "title": "Data Analyst",
+    "min_salary": 70000,
+    "max_salary": 120000,
+    "date": "2023-06-01"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/log HTTP/1.1
+content-type: application/json
+
+{
+    "company": "Company B",
+    "title": "Senior Data Analyst",
+    "min_salary": 120000,
+    "max_salary": 150000,
+    "date": "2023-06-02"
+}
+
+### CREATE 3
+POST http://localhost:3000/log HTTP/1.1
+content-type: application/json
+
+{
+    "company": "Company C",
+    "title": "Data Scientist",
+    "min_salary": 130000,
+    "max_salary": 170000,
+    "date": "2023-06-03"
+}
+
+### CREATE 4
+POST http://localhost:3000/log HTTP/1.1
+content-type: application/json
+
+{
+    "company": "Company D",
+    "title": "Senior Data Scientist",
+    "min_salary": 170000,
+    "max_salary": 210000,
+    "date": "2023-06-04"
+}
+
+### CREATE 5
+POST http://localhost:3000/log HTTP/1.1
+content-type: application/json
+
+{
+    "company": "Company E",
+    "title": "Software Engineer",
+    "min_salary": 150000,
+    "max_salary": 180000,
+    "date": "2023-06-05"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/log HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/log/6483aeab8d8d4f8cf6ebfa3a HTTP/1.1
+
+
+### UPDATE one document's salary, by ID.
+### Replace the id in the following request with one that exists
+### and update company, title, min_salary, max_salary, or date.
+PUT http://localhost:3000/log/6483aeab8d8d4f8cf6ebfa3a HTTP/1.1
+content-type: application/json
+
+{
+    "company": "Company F",
+    "title": "Senior Software Engineer",
+    "min_salary": 190000,
+    "max_salary": 230000,
+    "date": "2023-06-06"
+}
+
+### DELETE by ID (no response provided)
+DELETE http://localhost:3000/log/6483af1f8d8d4f8cf6ebfa4e HTTP/1.1
+
+
+# ### DELETEs ALL documents!
+# DELETE http://localhost:3000/log/ HTTP/1.1
+
