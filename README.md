@@ -16,8 +16,8 @@ Tech Stack
 ---
 * MongoDB
 * Express
-* Node.js
 * React
+* Node.js
 
 Screenshots
 ---
