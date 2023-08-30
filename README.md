@@ -21,4 +21,4 @@ Tech Stack
 
 Screenshots
 ---
-(https://github.com/sangtvo/job-app-tracker/blob/main/frontend/vosan-screenshot.png?raw=true)
+![job-app-tracker-screenshot](https://github.com/sangtvo/job-app-tracker/blob/main/frontend/vosan-screenshot.png?raw=true)
